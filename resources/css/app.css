@@ -1,0 +1,476 @@
+
+body{
+    overflow-x: hidden;
+    font-family: sans-serif;
+}
+body {
+    background-image: url('../../public/images/header_bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+
+
+
+.custom-btn {
+    outline: none;
+    background: #c33;
+    color: #fff;
+    padding: 10px 25px;
+    transition: .3s;
+    display: inline-block;
+    border: none;
+    border-radius: 3px;
+    text-decoration: none;
+}
+.custom-btn:hover{
+background-color: black;
+}
+
+a.nav-link:hover {
+    color: #CC3333;
+  }
+
+.about_text h5 ,  .menu h5 , .contact h5, .login h5{
+    font-family: cursive;
+     font-weight: 700;
+     color: #CC3333;
+}
+
+/*navbar styles*/
+.logo{
+    width:70px;
+    margin-top:15px;
+    padding-left: 2px;
+    height:70px;
+}
+.navbar-brand{
+    font-weight: 700;
+    font-size: 24px;
+}
+.navbar{
+    transition: 0.5s;
+    font-size: 15px;
+    height: 70px;z-index: 2;
+    background-color: #fff;
+}
+.nav-item{
+    padding-right: 20px;
+}
+.navbar-scrolled {
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);  }
+
+
+
+
+
+.carousel{
+    margin-top: 5%;
+}
+
+.carousel-img{
+    width:600px;
+    height:550px;
+    margin-top: 5%;
+}
+
+
+
+#mycarousel h1{
+    font-size: 55px;
+    font-weight: 700;
+    padding-bottom: 25px;
+    
+}
+
+@media (max-width: 768px) {
+    #mycarousel h1 {
+        font-size: 30px; 
+        padding-bottom: 15px;
+         
+    }
+}
+
+@media (max-width: 576px) {
+    #mycarousel h1 {
+        font-size: 20px; 
+        padding-bottom: 10px; 
+    }
+}
+.carousel-item {
+    transition: transform 0.6s ease-in-out;
+    transform: translateX(0);
+  }
+  
+
+.carousel-indicators [data-bs-target]{
+    width: 60px;
+    height: 5px;
+    margin-top: 30px; 
+    margin-left: 5px;
+    margin-bottom: -40px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-indicators button {
+    width: 500px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.carousel-indicators .active {
+    background-color: #CC3333; 
+}
+
+
+@media (max-width: 767px) {
+    .navbar {
+      padding: 0; 
+    }
+    .carousel {
+      margin-top: 80px; 
+    }
+    
+  }
+@media (max-width: 575px) {
+    .navbar {
+        padding: 0; 
+      }
+      .carousel {
+        margin-top: 180px;
+      }
+}
+ 
+
+
+/*caraousel list*/
+.custom-list{
+    list-style-type: none;
+    font-size: 22px;
+    vertical-align: middle;
+    padding-left: 0;
+}
+.custom-list li::before{
+    content:"check_circle";
+    margin-right: 8px;
+    font-size: 22px;
+    color: #CC3333;
+    vertical-align: middle;
+  font-family: 'Material Icons'; 
+}
+
+
+/*about us*/
+.about_us{
+    padding-top:50px;
+    padding-bottom: 70px;
+    margin-top: 50px;
+    background-color:red !important;
+}
+
+.about_text{
+    
+    padding-left: 50px;
+}
+
+
+
+
+    .testimonial-area {
+        padding: 80px 0;
+    }
+    .section-header h4 {
+        color: #f75023;
+        font-weight: 600;
+    }
+    .section-header {
+        padding-bottom: 15px;
+    }
+    .section-header h2 {
+        font-weight: 700;
+    }
+    .section-header p {
+        width: 40%;
+        margin: auto;
+    }
+ 
+    .content p {
+        width: 60%;
+        margin: auto;
+        font-size: 18px;
+    }
+    .person {
+        width: 130px;
+        height: 130px;
+        display: block;
+        margin: auto;
+        border-radius: 50%;
+        overflow: hidden;
+        border: none;
+        margin-top: 50px;
+    }
+    .person img {
+        width: 100%;
+    }
+    .content h5 {
+        font-weight: 900;
+        margin: 15px 0 50px 0;
+
+    }
+    .testimonial-area {
+        background: url(testbg.png);
+        background-size:cover;
+        background-position: center;
+    }
+   
+    @media (min-width: 768px) and (max-width: 991px) {
+        .section-header p {
+            width: 85%;
+        }
+        .content p {
+            width: 95%;
+        }
+    }
+    @media (max-width: 768px) {
+        .testimonial-area {
+            padding: 30px 0;
+        }
+        .section-header p {
+            width: 95%;
+        }
+        .content p {
+            width: 100%;
+        }
+    }
+    
+
+    .overlay-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(240, 248, 255, 0.7); 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+
+
+      .footer {
+        position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-image: url('footerbg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 40px 0;
+    margin-bottom: 0;
+    /* z-index: 10;  */
+      }
+    
+
+      .quick-links ul {
+        list-style: none;
+        padding: 0;
+      }
+  
+      .quick-links ul li {
+        margin-bottom: 10px;
+      }
+  
+      .opening-hours table {
+        width: 100%;
+      }
+  
+      .opening-hours td {
+        padding: 5px 0;
+      }
+  
+      .column-heading {
+        margin-top: 25px;
+        margin-bottom: 10px;
+        font-weight: 700;
+        font-size: 18px; 
+    
+      }
+  
+      .separator {
+        border-top: 1px solid #fff;
+        margin: 20px 0; 
+      }
+  
+      .copyright {
+        text-align: center;
+        margin-top: 20px;
+      }
+      .foot-icons {
+        vertical-align: middle;
+        margin-right: 5px; 
+      }
+
+      .list-group .list-group-item {
+        background-color: transparent; 
+        border: none; 
+        color: #fff;
+        
+      }
+      
+     .icon-background {
+        background-color: none; 
+        width: 40px;
+        height: 40px; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%; 
+      }
+      
+      .quick-links a{
+        color: #fff;
+        text-decoration: none;
+      }
+      .quick-links a:hover{
+        color: #CC3333;
+      }
+
+      .social-buttons{
+        margin: 40px 0 0 0 ;
+      }
+      .btn-primary{
+        background:none;
+        border:none;
+        padding:2px;
+      }
+      .btn-primary:hover{
+        color:#CC3333;
+        background: none;
+        border: none;
+      }
+
+   
+      .contact,.login {
+        background-color: white;
+        border-radius: 10px;
+        padding: 50px;
+        margin: 50px auto;
+        max-width: 600px; 
+        border-color: aqua;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        
+    }
+    .contact h2{
+      padding: 10px;
+      font-weight: 700;
+    }
+
+    .form-label{
+      font-size: 14px;
+      font-weight: 700;
+
+    }
+    .form-control:focus {
+      border-color: rgb(239, 129, 129);
+      box-shadow: 0 0 0 0.2rem rgba(207, 51, 51, 0.25);
+  } 
+  .form-control{
+    border-color: rgb(248, 180, 180);
+  }
+
+  #confirmation-message{
+    padding: 20px 0 20px 0;
+    font-size: 20px;
+    color: black;
+  }
+
+  a{
+    text-decoration: none;
+    color: black;
+}
+a .item-name{
+    font-size: 16px;
+font-weight: 700;
+}
+
+
+.menu{
+  padding: 80px 0 80px 0;
+  }
+  .menu h1, .login h1{
+      font-weight: 700;
+      padding-bottom: 30px;
+  }
+ a .menu-card{
+      padding: 10px ;
+      margin:2px 0 0 0;
+      text-decoration: none;
+  }
+ .menu-active {
+    border:1px solid #CC3333 ;
+    border-radius: 5px;
+  }
+  .menu-card img{
+      height: 70px;
+      width: 70px;
+      border-radius: 50%;
+  }
+  
+ 
+  .price{
+      color:#CC3333;
+      font-size: 16px;
+      font-weight: 700;
+  }
+
+
+         /* Styles for the custom alert modal */
+         .custom-alert {
+          position: fixed;
+          top: 0;
+          right: -300px;
+          width: 300px;
+          background-color: #fff;
+          box-shadow: 0 0 15px rgba(223, 16, 16, 0.2);
+          z-index: 999;
+          overflow: hidden;
+          transition: right 0.5s; 
+      }
+      
+      .custom-alert-slide {
+          animation: slide-in 0.5s forwards; 
+      }
+      
+      .custom-alert-content {
+          padding: 20px;
+          text-align: center;
+      }
+      
+      .custom-alert h2 {
+          font-size: 24px;
+      }
+      
+      .custom-alert p {
+          margin: 10px 0;
+      }
+      
+      .custom-alert button {
+          padding: 10px 20px;
+          color: #fff;
+          border: none;
+          cursor: pointer;
+      }
+      
+  
+  @keyframes slide-in {
+          from {
+              right: -300px;
+          }
+          to {
+              right: 0;
+          }
+      }
